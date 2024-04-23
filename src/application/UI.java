@@ -31,7 +31,7 @@ public class UI {
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
 	public static void clearScreen() {
-		System.out.print("0\033[H\033[2J");
+		System.out.print("\033[H\033[2J");
 		System.out.flush();
 	}
 
@@ -52,7 +52,7 @@ public class UI {
 			for (int j = 0; j < pieces.length; j++) {
 				printPiece(pieces[i][j]);
 			}
-			System.out.println();
+			System.out.println("");
 		}
 		System.out.println(" a b c d e f g h ");
 	}
